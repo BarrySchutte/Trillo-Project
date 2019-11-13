@@ -38,6 +38,10 @@
             outline: none;
             width: 100%;
             background-color: var(--color-grey-light-3);
+
+            @media only screen and (max-width: $bp-smallest) {
+                width: 90%;
+            }
         }
 
         &::-webkit-input-placeholder {
@@ -265,9 +269,17 @@
         }
 
         @media only screen and (max-width: $bp-mobile) {
-            flex: 0 0 100%;
+            flex: 0 0 60%;
             text-align: center;
             border-bottom: var(--line);
+            padding-right: 0;
+            margin-right: -5px;
+            margin-left: 20px;
+        }
+
+        @media only screen and (max-width: $bp-mobile-small) {
+            margin-right: 0;
+            margin-left: auto;
         }
     }
 
@@ -276,8 +288,14 @@
         display: flex;
 
         @media only screen and (max-width: $bp-mobile) {
-            margin-right: 10px;
-            margin-left: auto;
+            margin-right: auto;
+            margin-left: -15px;
+            flex: 0 0 30%;
+        }
+
+        @media only screen and (max-width: $bp-mobile-small) {
+            margin-right: auto;
+            margin-left: 0;
         }
     }
 
@@ -292,6 +310,10 @@
         font-size: 1.2rem;
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-mobile) {
+            margin-left: auto;
+        }
     }
 
     &__icon-location {
