@@ -1,7 +1,7 @@
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #f36;
-  --color-primary-dark: #BA265D;
+  --color-primary: #66bb6a;
+  --color-primary-light: #a5d6a7;
+  --color-primary-dark: #2e7d32;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
@@ -150,9 +150,8 @@ body {
       @media only screen and (max-width: 31.25em) {
         .search__input:focus {
           width: 90%; } }
-    .search__input::-webkit-input-placeholder {
-      font-weight: 100;
-      color: var(--color-grey-light-4); }
+    .search__input::placeholder {
+      color: #777; }
   .search__input:focus + .search__button {
     background-color: var(--color-grey-light-3); }
   .search__button {
@@ -384,19 +383,7 @@ body {
     .btn-inline:hover span {
       margin-left: 8px; }
   .btn-inline:focus {
-    outline: none;
-    animation: pulsate 1s infinite; }
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    box-shadow: none; }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
-  100% {
-    transform: scale(1);
-    box-shadow: none; } }
+    outline: none; }
 
 .paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
@@ -502,7 +489,11 @@ body {
     margin-bottom: 2.5rem; }
     @media only screen and (max-width: 31.25em) {
       .cta__book-now {
-        margin: 1rem 2rem; } }
+        margin: 1.5rem 2rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .cta__book-now {
+        font-size: 1.7rem;
+        margin-bottom: 2rem; } }
 
 .btn {
   font-size: 1.5rem;
@@ -542,3 +533,14 @@ body {
   .btn:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
