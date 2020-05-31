@@ -31,10 +31,10 @@
         color: inherit;
         background-color: var(--color-grey-light-2);
         border: none;
-        padding: .7rem 2rem;
+        padding: 0.7rem 2rem;
         border-radius: 200px;
         width: 90%;
-        transition: .2s;
+        transition: 0.2s;
         margin-right: -3.25rem;
 
         &:focus {
@@ -52,7 +52,7 @@
         }
     }
 
-    &__input:focus+&__button {
+    &__input:focus + &__button {
         background-color: var(--color-grey-light-3);
     }
 
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
 
-    &>* {
+    & > * {
         padding: 0 2rem;
         cursor: pointer;
         height: 100%;
@@ -93,7 +93,7 @@
         align-items: center;
     }
 
-    &>*:hover {
+    & > *:hover {
         background-color: var(--color-grey-light-2);
     }
 
@@ -108,7 +108,7 @@
     }
 
     &__notification {
-        font-size: .8rem;
+        font-size: 0.8rem;
         height: 1.75rem;
         width: 1.75rem;
         border-radius: 50%;
@@ -147,7 +147,7 @@
         position: relative;
 
         &:not(last-child) {
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
 
             @media only screen and (max-width: $bp-medium) {
                 margin: 0;
@@ -160,7 +160,7 @@
     }
 
     &__item::before {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -168,7 +168,7 @@
         width: 3px;
         background-color: var(--color-primary);
         transform: scaleY(0);
-        transition: transform .2s, width .4s cubic-bezier(1, 0, 0, 1) .2s, background-color .1s;
+        transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
     }
 
     &__item:hover::before,
@@ -201,7 +201,7 @@
 
         @media only screen and (max-width: $bp-small) {
             flex-direction: column;
-            padding: 1.5rem .5rem;
+            padding: 1.5rem 0.5rem;
         }
     }
 
@@ -213,7 +213,7 @@
 
         @media only screen and (max-width: $bp-small) {
             margin-right: 0;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             width: 1.5rem;
             height: 1.5rem;
         }
@@ -319,7 +319,7 @@
     }
 
     &__icon-location {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
 
     &__rating {
@@ -354,11 +354,11 @@
     }
 
     &__rating-count {
-        font-size: .8rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
 
         @media only screen and (max-width: $bp-small) {
-            font-size: .5rem;
+            font-size: 0.5rem;
         }
     }
 }
@@ -375,11 +375,11 @@
     display: inline-block;
     background-color: transparent;
     cursor: pointer;
-    transition: .2s;
+    transition: 0.2s;
 
     & span {
         margin-left: 3px;
-        transition: margin-left .2s;
+        transition: margin-left 0.2s;
     }
 
     &:hover {
@@ -402,7 +402,6 @@
     margin-bottom: 2rem;
 }
 
-
 /////////////////////////////////////////
 // LIST
 
@@ -418,7 +417,7 @@
 
     &__item {
         flex: 0 0 50%;
-        margin-bottom: .7rem;
+        margin-bottom: 0.7rem;
         display: flex;
         align-items: center;
     }
@@ -426,7 +425,7 @@
     &__item-icon {
         height: 1rem;
         width: 1rem;
-        margin-right: .7rem;
+        margin-right: 0.7rem;
         fill: var(--color-primary);
     }
 
@@ -489,7 +488,6 @@
 // REVIEWS
 
 .review {
-
     background-color: #fff;
     box-shadow: var(--shadow-light);
     padding: 3rem;
@@ -546,7 +544,7 @@
     }
 
     &::before {
-        content: "\201C";
+        content: '\201C';
         display: block;
         position: absolute;
         top: -3rem;
@@ -606,11 +604,11 @@
         font-size: 1.4rem;
     }
 
-    &>* {
+    & > * {
         display: inline-block;
         height: 100%;
         width: 100%;
-        transition: .2s;
+        transition: 0.2s;
     }
 
     &__visible {
@@ -654,7 +652,7 @@
 
     50% {
         transform: scale(1.05);
-        box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
     }
 
     100% {
